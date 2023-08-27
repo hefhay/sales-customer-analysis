@@ -1,4 +1,5 @@
 # Sales Analysis
+### You can interact with the report [HERE](https://app.powerbi.com/view?r=eyJrIjoiZjIwZGQ4YmMtZDc5NC00YjFlLWEyMWItYTJjMDBkZDhkZWRiIiwidCI6ImI5NjBjM2ZmLWE4ODktNDQzOC05N2QwLTZlZjFiYTY2MzZhMiJ9)
 
 ## Introduction
 Welcome to the exciting world of data analysis! In this documentation, we delve into an in-depth exploration of sales and customer data, leveraging the comprehensive Adventure Works dataset. Our analysis aims to uncover valuable insights and trends that lie within the data, shedding light on the dynamics of sales, customer behavior, and more. Join us on this journey as we navigate through the numbers, revealing actionable findings that can drive strategic decisions and enhance business outcomes.
@@ -145,6 +146,8 @@ Incorporating the same slicers employed in the sales report, a consistent framew
 
 ![](scpn.png)
 
+### You can interact with the report [HERE](https://app.powerbi.com/view?r=eyJrIjoiZjIwZGQ4YmMtZDc5NC00YjFlLWEyMWItYTJjMDBkZDhkZWRiIiwidCI6ImI5NjBjM2ZmLWE4ODktNDQzOC05N2QwLTZlZjFiYTY2MzZhMiJ9)
+
 ## Insights and Recommendations
 
 1. The top 10 customers, based on their significant sales contributions, play a vital role in boosting the company's revenue. These high-value customers likely possess considerable purchasing power. Notably, no customer appears on both the high sales and high quantity lists, indicating a distinct nature between the two categories. Nonetheless, being present on either list signifies customer loyalty, showing commitment to the company through either high-value transactions or frequent engagement.
@@ -172,6 +175,8 @@ This interplay between revenue and quantity carries strategic implications:
 8. Paris shines as the standout city among the 219 analyzed, not only for its impressive sales worth around $539,725 but also for leading in sales quantity. These substantial sales contribute about 2% to the total sales across all cities, showcasing Paris's pivotal role. Other strong contributors like Wollongong, Warrnambool, and Bendigo follow suit, emphasizing diverse regional sales excellence driven by varying market dynamics and consumer preferences.
 
 9. Looking at marital status, singles contribute 48.27% of the total sales revenue, while married individuals contribute 51.73% of the total sales revenue. This insight suggests that the difference in sales revenue between singles and married individuals is relatively small, indicating that both groups play a significant role in driving sales for the company. This balance highlights the importance of catering to the preferences and needs of both marital status categories, ensuring that products and marketing strategies resonate effectively with a diverse customer base.
+
+### You can interact with the report [HERE](https://app.powerbi.com/view?r=eyJrIjoiZjIwZGQ4YmMtZDc5NC00YjFlLWEyMWItYTJjMDBkZDhkZWRiIiwidCI6ImI5NjBjM2ZmLWE4ODktNDQzOC05N2QwLTZlZjFiYTY2MzZhMiJ9)
 
 ## Conclusion
 In conclusion, my thorough analysis of the data has illuminated valuable insights into customer behavior, product preferences, and sales dynamics. From dissecting age-based contributions to understanding gender and marital status impacts, I've gained a comprehensive understanding of our customer base. Exploring city-wise sales highlights and product category distributions has provided strategic directions for growth. These insights serve as a compass, guiding us towards tailored marketing strategies, optimized product offerings, and enhanced customer experiences. By leveraging these findings, I am poised to make informed decisions that will drive our business forward, fostering continued success in an ever-evolving market landscape.
