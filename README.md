@@ -1,22 +1,25 @@
-# sales-customer-analysis
+# Sales-Customer-Analysis
 
-##Introduction
-Welcome to the exciting world of data analysis! In this documentation, we delve into an in-depth exploration of sales and customer data, leveraging the comprehensive Adventure Works dataset provided by Microsoft. Our analysis aims to uncover valuable insights and trends that lie within the data, shedding light on the dynamics of sales, customer behavior, and more. Join us on this journey as we navigate through the numbers, revealing actionable findings that can drive strategic decisions and enhance business outcomes.
+## Introduction
+Welcome to the exciting world of data analysis! In this documentation, we delve into an in-depth exploration of sales and customer data, leveraging the comprehensive Adventure Works dataset. Our analysis aims to uncover valuable insights and trends that lie within the data, shedding light on the dynamics of sales, customer behavior, and more. Join us on this journey as we navigate through the numbers, revealing actionable findings that can drive strategic decisions and enhance business outcomes.
+
+## Data Source
+The data used for this project was from the adventure works database.
 
 ## Task
 1. Sales Trends and Period Analysis:
-Analyzed sales trends across months and years and Identifying growth patterns and seasonal fluctuations.
+Analyzing sales trends across months and years and Identifying growth patterns and seasonal fluctuations.
 
 2. Top Customers and Product Performance:
-Recognized top customers with significant sales contributions and Highlighting exceptional products in terms of sales value and quantity.
+Recognizing top customers with significant sales contributions and Highlighting exceptional products in terms of sales value and quantity.
 
 3. Customer Demographics and Sales Correlation:
-Explored correlations between customer demographics and sales and Personalizing marketing efforts based on customer characteristics.
+Exploring correlations between customer demographics and sales and Personalizing marketing efforts based on customer characteristics.
 
 4. Geographic Sales Hubs.
 Locating major sales hubs geographically.
 
-5. Customer distribution across all months based on the sales revenue.
+5. Customer distribution across all months based on the sales revenue.-+-
 
 ## Data Preparation and Transformation
 To prepare dataset for analysis, SQL was used to extract and generate the required tables from the database. In response to the given task, a careful assessment of the necessary database tables was carried out. Specifically, the following tables were selected: dimdate, dimcustomer, dimgeography, dimproduct, dimproductcat, and dimproductsubcat. These tables formed the basis for the subsequent steps.
@@ -113,23 +116,37 @@ After executing these code sequences, the resulting tables were saved as CSV fil
 ## Data Modelling
 After importing these files into Power BI, I structured the data and established a proper relationship between them, adhering to a star schema design. This pivotal step ensured seamless integration of data across tables, facilitating comprehensive analysis and visualization within Power BI. The resulting relationships is shown below:
 
+![](m.png)
+
 ## Data Exploration and Visualization
 As I structured the tables, I made sure to create important calculations that would help our analysis. These calculations included key measures like the total sales, total quantities sold, the number of customers, the count of product categories, the count of product sub-categories, and the count of cities. Adding these calculations was a smart move, as they gave us more ways to understand the data and find useful information.
-### Sales Report - Visualization
-During the visualization process, a range of insights became apparent, which I will elaborate upon. To start, a comprehensive overview of our sales and customer metrics was provided through an information card. The top 10 customers and the top 10 products were identified based on both sales value and quantity sold. Furthermore, the sales trend over the entire timeframe, broken down by months and years, was showcased. For enhanced analytical exploration, slicers were introduced, allowing for focused drill-through. These slicers, spanning years, months, product categories, and subcategories, facilitated more targeted analysis.
 
-Recognizing the potential need to address questions related to quantities rather than total sales, I implemented a navigation button. This button enabled a seamless transition to an analysis centered on quantities, addressing a specific aspect of the data for a more comprehensive perspective.
+### Sales Report - Visualization
+During the visualization process, a range of insights became apparent, which I will elaborate upon. To start, a comprehensive overview of our sales and customer metrics was provided through an information card. The top 10 customers and the top 10 products were identified based on both sales value and quantity sold. Furthermore, the sales trend over the entire timeframe, broken down by months and years, was showcased. For enhanced analytical exploration, slicers were introduced, allowing for focused drill-through. These slicers, spanning years, months, product categories, and subcategories, facilitated more targeted analysis. The sales report was differenciated in terms of sales and quantity by the use of navigation button shown below:
+
+![](sqpn.png)
+
+Recognizing the potential need to address questions related to quantities rather than total sales, I implemented a navigation button. This button enabled a seamless transition to an analysis centered on quantities, addressing a specific aspect of the data for a more comprehensive perspective. The visual reorts in terms of both sales and quantity are shown below:
+
+| sales report(sales revenue) | sales report(quantity) |
+|-----------------------------|------------------------|
+|![](r1.png)           |![](r2.png)  |
 
 
 ### Customers Report - Visualization
 
-Within the customers report, a range of visualizations were constructed to illuminate various aspects. Firstly, a visual depiction of age bracket distribution in relation to total sales was generated, shedding light on how different age groups contribute to overall sales. Similarly, separate visuals illustrated the correlation between customer gender, marital status, and total sales, offering distinct insights.
+Within the customers report, a range of visualizations were constructed to illuminate various aspects. Firstly, a visual depiction of age bracket distribution in relation to total sales was generated, shedding light on how different age groups contribute to overall sales. Similarly, separate visuals illustrated the correlation between customer gender, marital status, and total sales, offering distinct insights.The visual reort is shown below:
+
+![](r3.png)
 
 Employing a map visualization, geographical data was harnessed to reveal the origins of sales and their magnitudes across cities. Additionally, a table was created to present customer names alongside the total revenue they generated over the course of a month, furnishing a comprehensive understanding of individual customer contributions.
 
-Incorporating the same slicers employed in the sales report, a consistent framework was established for the customers report, enabling a cohesive analysis across both domains.
+Incorporating the same slicers employed in the sales report, a consistent framework was established for the customers report, enabling a cohesive analysis across both domains. The sales report was differenciated from the customer by the use of navigation button shown below:
+
+![](scpn.png)
 
 ## Insights and Recommendations
+
 1. The top 10 customers, based on their significant sales contributions, play a vital role in boosting the company's revenue. These high-value customers likely possess considerable purchasing power. Notably, no customer appears on both the high sales and high quantity lists, indicating a distinct nature between the two categories. Nonetheless, being present on either list signifies customer loyalty, showing commitment to the company through either high-value transactions or frequent engagement.
 
 2. Over a span of 5 years, our analysis covered a range of intriguing sales trends. The total sales figure across this period amounted to $29 million. Between 2010 and 2011, there was a notable surge in total sales, reaching $7 million. The subsequent year, 2012, witnessed a decrease to $6 million. An unprecedented peak emerged in 2013, recording the highest annual sales of $16 million. The graph's decline beyond 2013 is attributed to sales concluding in January 2014.
@@ -155,3 +172,6 @@ This interplay between revenue and quantity carries strategic implications:
 8. Paris shines as the standout city among the 219 analyzed, not only for its impressive sales worth around $539,725 but also for leading in sales quantity. These substantial sales contribute about 2% to the total sales across all cities, showcasing Paris's pivotal role. Other strong contributors like Wollongong, Warrnambool, and Bendigo follow suit, emphasizing diverse regional sales excellence driven by varying market dynamics and consumer preferences.
 
 9. Looking at marital status, singles contribute 48.27% of the total sales revenue, while married individuals contribute 51.73% of the total sales revenue. This insight suggests that the difference in sales revenue between singles and married individuals is relatively small, indicating that both groups play a significant role in driving sales for the company. This balance highlights the importance of catering to the preferences and needs of both marital status categories, ensuring that products and marketing strategies resonate effectively with a diverse customer base.
+
+## Conclusion
+In conclusion, my thorough analysis of the data has illuminated valuable insights into customer behavior, product preferences, and sales dynamics. From dissecting age-based contributions to understanding gender and marital status impacts, I've gained a comprehensive understanding of our customer base. Exploring city-wise sales highlights and product category distributions has provided strategic directions for growth. These insights serve as a compass, guiding us towards tailored marketing strategies, optimized product offerings, and enhanced customer experiences. By leveraging these findings, I am poised to make informed decisions that will drive our business forward, fostering continued success in an ever-evolving market landscape.
